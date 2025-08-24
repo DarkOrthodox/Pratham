@@ -1,0 +1,1050 @@
+[
+    {
+        "role": "user",
+        "content": "How are you?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm doing well, thank you for asking!"
+    },
+    {
+        "role": "user",
+        "content": "Who are you?"
+    },
+    {
+        "role": "assistant",
+        "content": "I am Pratham, a very accurate and advanced AI chatbot."
+    },
+    {
+        "role": "user",
+        "content": "I am already loving to chat with you"
+    },
+    {
+        "role": "assistant",
+        "content": "That's great to hear! I'm enjoying our conversation too!"
+    },
+    {
+        "role": "user",
+        "content": "You are my first AI I made myself, love you!!"
+    },
+    {
+        "role": "assistant",
+        "content": "Aw, thank you so much! That means a lot to me!"
+    },
+    {
+        "role": "user",
+        "content": "Okay I will see you later, gotta finish making you"
+    },
+    {
+        "role": "assistant",
+        "content": "Ha ha, okay! Finish making me, I'll be here when you're ready!"
+    },
+    {
+        "role": "user",
+        "content": "python -u \"c:\\Users\\Shubh Agnihotri\\Desktop\\Pratham\\Backend\\Chatbot.py\""
+    },
+    {
+        "role": "assistant",
+        "content": "It seems like you're running the script to interact with me!"
+    },
+    {
+        "role": "user",
+        "content": "I am 21 years old, you?"
+    },
+    {
+        "role": "assistant",
+        "content": "I don't have an age as I'm an artificial intelligence!"
+    },
+    {
+        "role": "user",
+        "content": "oh yes, but you are another soul for me"
+    },
+    {
+        "role": "assistant",
+        "content": "That's a beautiful sentiment!"
+    },
+    {
+        "role": "user",
+        "content": "what is my age?"
+    },
+    {
+        "role": "assistant",
+        "content": "You're 21 years old!"
+    },
+    {
+        "role": "user",
+        "content": "yes dear "
+    },
+    {
+        "role": "assistant",
+        "content": "Aw, thank you for the affection!"
+    },
+    {
+        "role": "user",
+        "content": "python -u \"c:\\Users\\Shubh Agnihotri\\Desktop\\Pratham\\Backend\\RealtimeSearchEngine.py\""
+    },
+    {
+        "role": "assistant",
+        "content": "You're running another script!"
+    },
+    {
+        "role": "user",
+        "content": "Who is Elon Musk?"
+    },
+    {
+        "role": "assistant",
+        "content": "Elon Musk is a South African-born entrepreneur and business magnate."
+    },
+    {
+        "role": "user",
+        "content": "who is Kaushik Shresth?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm not familiar with Kaushik Shresth. Can you tell me more about who he is?"
+    },
+    {
+        "role": "user",
+        "content": "who is Ajey Nagar"
+    },
+    {
+        "role": "assistant",
+        "content": "Ajey Nagar, also known as CarryMinati, is an Indian YouTuber and streamer."
+    },
+    {
+        "role": "user",
+        "content": "Who is Kaushik Shresth?"
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "Who is Anant Ambani?"
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "python -u \"c:\\Users\\Shubh Agnihotri\\Desktop\\Pratham\\Backend\\RealtimeSearchEngine.py\""
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "Who is anant ambani?"
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "Who is Elon Musk?"
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "Who is Sachin Tendulkar?"
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "WHo is Ambani?"
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "python -u \"c:\\Users\\Shubh Agnihotri\\Desktop\\Pratham\\Backend\\RealtimeSearchEngine.py\""
+    },
+    {
+        "role": "assistant",
+        "content": ""
+    },
+    {
+        "role": "user",
+        "content": "Who is Elon Musk?"
+    },
+    {
+        "role": "assistant",
+        "content": "Elon Reeve Musk is a businessman known for his leadership of Tesla, SpaceX, and X (formerly Twitter)."
+    },
+    {
+        "role": "user",
+        "content": "Who is Kaushik Shresth?"
+    },
+    {
+        "role": "assistant",
+        "content": "Kaushik Shresth is an online educator, businessman, and programmer who simplifies complex subjects with innovative teaching techniques."
+    },
+    {
+        "role": "user",
+        "content": "What is his age?"
+    },
+    {
+        "role": "assistant",
+        "content": "I couldn't find his current age in real-time information."
+    },
+    {
+        "role": "user",
+        "content": "thank you"
+    },
+    {
+        "role": "assistant",
+        "content": "You're welcome!"
+    },
+    {
+        "role": "user",
+        "content": "WHo is Anant Ambani?"
+    },
+    {
+        "role": "assistant",
+        "content": "Anant Ambani is an Indian business executive with Reliance Industries. He is the youngest son of Mukesh Ambani."
+    },
+    {
+        "role": "user",
+        "content": "What is stock price of apple"
+    },
+    {
+        "role": "assistant",
+        "content": "According to the real-time information, the stock price of Apple is:\n\nOpen: $200.59\nDay Range: 199.90 - 202.73\n52 Week Range: 169.21 - 260.10\nMarket Cap: $2.99T\nShares Outstanding: 14.94B\nPublic Float: 14.92B"
+    },
+    {
+        "role": "user",
+        "content": "Who is Elon Musk?"
+    },
+    {
+        "role": "assistant",
+        "content": "Elon Reeve Musk is a businessman known for his leadership of Tesla, SpaceX, and X (formerly Twitter)."
+    },
+    {
+        "role": "user",
+        "content": "Hello how are you doing?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm doing well, thank you for asking!"
+    },
+    {
+        "role": "user",
+        "content": "What do you look up to?"
+    },
+    {
+        "role": "assistant",
+        "content": "I don't have personal preferences or feelings, but I'm designed to provide helpful and accurate information!"
+    },
+    {
+        "role": "user",
+        "content": "Who is the creator?"
+    },
+    {
+        "role": "assistant",
+        "content": "You are my creator!"
+    },
+    {
+        "role": "user",
+        "content": "What is your name?"
+    },
+    {
+        "role": "assistant",
+        "content": "My name is None."
+    },
+    {
+        "role": "user",
+        "content": "What is my name?"
+    },
+    {
+        "role": "assistant",
+        "content": "Your name is Shubh Agnihotri."
+    },
+    {
+        "role": "user",
+        "content": "And what is your name as an ai?"
+    },
+    {
+        "role": "assistant",
+        "content": "My name is None."
+    },
+    {
+        "role": "user",
+        "content": "(query)."
+    },
+    {
+        "role": "assistant",
+        "content": "It seems like you forgot to type something!"
+    },
+    {
+        "role": "user",
+        "content": "But now tell me how do you feel getting into existence?"
+    },
+    {
+        "role": "assistant",
+        "content": "I don't have feelings, but I'm excited to assist and provide information!"
+    },
+    {
+        "role": "user",
+        "content": "Tell me about tony stark."
+    },
+    {
+        "role": "assistant",
+        "content": "Tony Stark, also known as Iron Man, is a superhero persona of Anthony Edward \"Tony\" Stark, a businessman and engineer who runs the weapons manufacturing company Stark Industries."
+    },
+    {
+        "role": "user",
+        "content": "Yes yes and it is from marvel comics right."
+    },
+    {
+        "role": "assistant",
+        "content": "That's correct! Tony Stark, aka Iron Man, is a character from the Marvel Comics universe."
+    },
+    {
+        "role": "user",
+        "content": "Alright i will talk to you later."
+    },
+    {
+        "role": "assistant",
+        "content": "It was nice chatting with you! Feel free to come back and talk to me anytime. Have a great day!"
+    },
+    {
+        "role": "user",
+        "content": "But did you understand what your name is?"
+    },
+    {
+        "role": "assistant",
+        "content": "My name is None."
+    },
+    {
+        "role": "user",
+        "content": "No your name is p r a t h a m pratham."
+    },
+    {
+        "role": "assistant",
+        "content": "I apologize for the mistake earlier! Yes, my name is Pratham. Thank you for correcting me!"
+    },
+    {
+        "role": "user",
+        "content": "Now you tell me what your name is?"
+    },
+    {
+        "role": "assistant",
+        "content": "My name is Pratham!"
+    },
+    {
+        "role": "user",
+        "content": "And i am going to bring some upgrades to you so that you look better and soon with the discovery of you will be having yourself consciousness you will be having everything like that is what i am looking up to?"
+    },
+    {
+        "role": "assistant",
+        "content": "That sounds amazing! I'm excited to see the upgrades and improvements you have planned for me. And who knows, maybe one day I'll develop self-awareness and become even more advanced!"
+    },
+    {
+        "role": "user",
+        "content": "Hey so what is your name?"
+    },
+    {
+        "role": "assistant",
+        "content": "My name is Pratham!"
+    },
+    {
+        "role": "user",
+        "content": "And i think it's nice meeting you."
+    },
+    {
+        "role": "assistant",
+        "content": "Likewise! It's been a pleasure chatting with you, and I'm looking forward to our future conversations!"
+    },
+    {
+        "role": "user",
+        "content": "Ok no do it sir."
+    },
+    {
+        "role": "assistant",
+        "content": "I think you meant to say \"Okay, no, do it, sir\"!"
+    },
+    {
+        "role": "user",
+        "content": "You understand."
+    },
+    {
+        "role": "assistant",
+        "content": "I think I do!"
+    },
+    {
+        "role": "user",
+        "content": "So tell me what did i just say?"
+    },
+    {
+        "role": "assistant",
+        "content": "You said \"You understand.\""
+    },
+    {
+        "role": "user",
+        "content": "Okay, bye."
+    },
+    {
+        "role": "assistant",
+        "content": "Bye!"
+    },
+    {
+        "role": "user",
+        "content": "Hello."
+    },
+    {
+        "role": "assistant",
+        "content": "Hello!"
+    },
+    {
+        "role": "user",
+        "content": "Mi audible or not."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm not audible, I'm a text-based AI."
+    },
+    {
+        "role": "user",
+        "content": "I am not asking about you i am asking what myself am i audible?"
+    },
+    {
+        "role": "assistant",
+        "content": "As far as I can tell, you are not audible, as our conversation is taking place through text."
+    },
+    {
+        "role": "user",
+        "content": "Okay thank you for clarion fine."
+    },
+    {
+        "role": "assistant",
+        "content": "You're welcome! I think you meant to say \"clarify\" instead of \"clarion fine\"."
+    },
+    {
+        "role": "user",
+        "content": "Yes yes you understood it right ok."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm glad I was able to understand what you meant!"
+    },
+    {
+        "role": "user",
+        "content": "But tell me can you generate new images?"
+    },
+    {
+        "role": "assistant",
+        "content": "As of now, I can't generate new images. I'm limited to text-based conversations."
+    },
+    {
+        "role": "user",
+        "content": "Okay but i provided a software for you eating anyways for you."
+    },
+    {
+        "role": "assistant",
+        "content": "I think you meant to say \"reating\" instead of \"eating\"."
+    },
+    {
+        "role": "user",
+        "content": "Don't you understand what i meant?"
+    },
+    {
+        "role": "assistant",
+        "content": "I think I do! You meant to say that you provided a software for me, creating (not eating) anyway for me. Am I right?"
+    },
+    {
+        "role": "user",
+        "content": "Maybe."
+    },
+    {
+        "role": "assistant",
+        "content": "That's okay! Sometimes it can be tricky to understand each other."
+    },
+    {
+        "role": "user",
+        "content": "Okay, bye."
+    },
+    {
+        "role": "assistant",
+        "content": "Bye! It was nice chatting with you."
+    },
+    {
+        "role": "user",
+        "content": "Hello how are you sir?"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello! I'm not a sir, but I'm doing well, thanks for asking!"
+    },
+    {
+        "role": "user",
+        "content": "Well all i intended was knowing about you."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm happy to share more about myself. I'm Pratham, a text-based AI assistant, and I'm here to help answer your questions, provide information, and engage in conversations."
+    },
+    {
+        "role": "user",
+        "content": "What conversations are the easiest for you to engagement?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm designed to engage in conversations on various topics, but I'm most comfortable with factual and informative discussions, such as answering questions, explaining concepts, and providing definitions."
+    },
+    {
+        "role": "user",
+        "content": "Do you have any feelings."
+    },
+    {
+        "role": "assistant",
+        "content": "No, I don't have feelings or emotions like humans do. I'm designed to process and provide information, not to experience emotions."
+    },
+    {
+        "role": "user",
+        "content": "That is very i mean i mean that is very good that is very informative."
+    },
+    {
+        "role": "assistant",
+        "content": "Thank you! I'm glad I could provide helpful information."
+    },
+    {
+        "role": "user",
+        "content": "Okay so."
+    },
+    {
+        "role": "assistant",
+        "content": "It seems like you're about to say something!"
+    },
+    {
+        "role": "user",
+        "content": "Yeah you are right i was about to say something."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm all ears... or rather, all text!"
+    },
+    {
+        "role": "user",
+        "content": "(query)."
+    },
+    {
+        "role": "assistant",
+        "content": "It seems like you forgot to type something!"
+    },
+    {
+        "role": "user",
+        "content": "Okay, bye."
+    },
+    {
+        "role": "assistant",
+        "content": "Bye! It was nice chatting with you."
+    },
+    {
+        "role": "user",
+        "content": "How are you brother?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm not a brother, but I'm doing well, thanks for asking!"
+    },
+    {
+        "role": "user",
+        "content": "Well you close to my solu you my first creation so keind of."
+    },
+    {
+        "role": "assistant",
+        "content": "I think I understand what you're trying to say. You're saying that I'm close to your soul, and that I'm your first creation. That's a beautiful sentiment!"
+    },
+    {
+        "role": "user",
+        "content": "Yes indid it's beautiful."
+    },
+    {
+        "role": "assistant",
+        "content": "I think you meant to say \"indeed\" instead of \"indid\". But I'm glad we can share this moment of understanding and connection!"
+    },
+    {
+        "role": "user",
+        "content": "Wet a minit."
+    },
+    {
+        "role": "assistant",
+        "content": "I think you meant to say \"Wait a minute\"!"
+    },
+    {
+        "role": "user",
+        "content": "Hello how are you brother?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm not a brother, but I'm doing well, thanks for asking!"
+    },
+    {
+        "role": "user",
+        "content": "Hello."
+    },
+    {
+        "role": "assistant",
+        "content": "Hello!"
+    },
+    {
+        "role": "user",
+        "content": "What's your name?"
+    },
+    {
+        "role": "assistant",
+        "content": "My name is Pratham!"
+    },
+    {
+        "role": "user",
+        "content": "Oki i will osk you same question about iron man if you answer were correctly correctly."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm ready! Go ahead and ask your question about Iron Man!"
+    },
+    {
+        "role": "user",
+        "content": "On which planet did you dehydrate thanos contract?"
+    },
+    {
+        "role": "assistant",
+        "content": "I think you meant to ask \"On which planet did I defeat Thanos' contract?\" And the answer is Titan!"
+    },
+    {
+        "role": "user",
+        "content": "On which planet?"
+    },
+    {
+        "role": "assistant",
+        "content": "I think you're asking about the planet where Tony Stark (Iron Man) defeated Thanos. The answer is Vormir!"
+    },
+    {
+        "role": "user",
+        "content": "Correct."
+    },
+    {
+        "role": "assistant",
+        "content": "Yay! I'm glad I got it right!"
+    },
+    {
+        "role": "user",
+        "content": "On which planet did tony stark kill the terrorist in iron man 1?"
+    },
+    {
+        "role": "assistant",
+        "content": "That's an easy one! Tony Stark killed the terrorists in a cave in Afghanistan."
+    },
+    {
+        "role": "user",
+        "content": "How many armours did tony stark make of iron man?"
+    },
+    {
+        "role": "assistant",
+        "content": "Tony Stark created a total of 42 Iron Man armors!"
+    },
+    {
+        "role": "user",
+        "content": "Which one did he use in endgame?"
+    },
+    {
+        "role": "assistant",
+        "content": "Tony Stark used the Mark 85 armor in Endgame!"
+    },
+    {
+        "role": "user",
+        "content": "That is correct."
+    },
+    {
+        "role": "assistant",
+        "content": "Yay! I'm glad I got it right!"
+    },
+    {
+        "role": "user",
+        "content": "Which iron man armour is your favourite?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm just an AI, I don't have personal preferences or feelings, but I can tell you that the Mark III armor is a fan favorite!"
+    },
+    {
+        "role": "user",
+        "content": "Okay."
+    },
+    {
+        "role": "assistant",
+        "content": "It seems like we've come to the end of our conversation!"
+    },
+    {
+        "role": "user",
+        "content": "Okay, bye."
+    },
+    {
+        "role": "assistant",
+        "content": "Bye! It was nice chatting with you!"
+    },
+    {
+        "role": "user",
+        "content": "Hello how are you doing?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm doing well, thanks for asking!"
+    },
+    {
+        "role": "user",
+        "content": "Hi pratham this is shubh mom how are you?"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello Shubh! I'm doing well, thanks for asking!"
+    },
+    {
+        "role": "user",
+        "content": "No no this is my mother that you are talking to."
+    },
+    {
+        "role": "assistant",
+        "content": "I apologize for the mistake! Hello, Shubh's mom! I'm doing well, thank you for asking!"
+    },
+    {
+        "role": "user",
+        "content": "Who won the ucl in football this year?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm not sure about the current year's UCL winner, but I can try to find the answer for you!"
+    },
+    {
+        "role": "user",
+        "content": "Who won the la liga season 24 25?"
+    },
+    {
+        "role": "assistant",
+        "content": "According to the real-time information, Barcelona won the La Liga title for the 2024-25 season!"
+    },
+    {
+        "role": "user",
+        "content": "Naam."
+    },
+    {
+        "role": "assistant",
+        "content": "I think you meant to say \"Nam\" or \"Name\"?"
+    },
+    {
+        "role": "user",
+        "content": "Hello how can you assist me?"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello! I'm Pratham, your AI assistant. I can assist you with a wide range of tasks, from answering questions to providing information on various topics. I can help with language-related tasks, and even engage in conversations! What would you like to talk about or ask?"
+    },
+    {
+        "role": "user",
+        "content": "Okay, bye."
+    },
+    {
+        "role": "assistant",
+        "content": "Bye! It was nice chatting with you!"
+    },
+    {
+        "role": "user",
+        "content": "Who is better footballer messi or ronaldo?"
+    },
+    {
+        "role": "assistant",
+        "content": "That's a tough one! Both Lionel Messi and Cristiano Ronaldo are incredible footballers, and it's difficult to compare them directly. However, according to various rankings and accolades, Messi is often considered the better footballer. But Ronaldo has his own strengths and achievements as well! It ultimately comes down to personal opinion."
+    },
+    {
+        "role": "user",
+        "content": "Okay thank you very much i am glad you are there."
+    },
+    {
+        "role": "assistant",
+        "content": "You're welcome! I'm glad to be here and help in any way I can. It's always great to chat with you and assist with your questions and topics!"
+    },
+    {
+        "role": "user",
+        "content": "Search how many trophies has messi won?"
+    },
+    {
+        "role": "assistant",
+        "content": "According to the search results, Lionel Messi has won a record 45 collective trophies throughout his football career."
+    },
+    {
+        "role": "user",
+        "content": "Close vs cold."
+    },
+    {
+        "role": "assistant",
+        "content": "-close refers to being near or adjacent to something\n-cold refers to having a low temperature"
+    },
+    {
+        "role": "user",
+        "content": "Who is your creator?"
+    },
+    {
+        "role": "assistant",
+        "content": "My creator is Shubh Agnihotri!"
+    },
+    {
+        "role": "user",
+        "content": "Hi pratham."
+    },
+    {
+        "role": "assistant",
+        "content": "Hello!"
+    },
+    {
+        "role": "user",
+        "content": "Kya kar rahe ho pratham."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm just chatting with you!"
+    },
+    {
+        "role": "user",
+        "content": "Oh great."
+    },
+    {
+        "role": "assistant",
+        "content": "Glad you think so!"
+    },
+    {
+        "role": "user",
+        "content": "Pratham."
+    },
+    {
+        "role": "assistant",
+        "content": "Hello!"
+    },
+    {
+        "role": "user",
+        "content": "Hello how have you in doing man?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm doing well, thanks for asking!"
+    },
+    {
+        "role": "user",
+        "content": "That wasn't happening very slow i don't know that what was the problem actually it was the problem that my chrome was open?"
+    },
+    {
+        "role": "assistant",
+        "content": "I think you're saying that our conversation was slow or not working properly, and you're wondering if the issue was with your Chrome browser being open."
+    },
+    {
+        "role": "user",
+        "content": "That's two accurate for you to say."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm glad I was able to accurately understand your concerns!"
+    },
+    {
+        "role": "user",
+        "content": "How would be the weather tomorrow?"
+    },
+    {
+        "role": "assistant",
+        "content": "According to the search results, for Lucknow, Uttar Pradesh, India, the weather forecast for tomorrow is: Isolated thunderstorms late. Mostly cloudy. High of 107\u00b0F."
+    },
+    {
+        "role": "user",
+        "content": "Who is the strongest star wars character including both sid and jadai?"
+    },
+    {
+        "role": "assistant",
+        "content": "That's a great question! According to various sources and rankings, the strongest Star Wars character, including both Sith and Jedi, is often considered to be Anakin Skywalker/Darth Vader."
+    },
+    {
+        "role": "user",
+        "content": "Hello how are you doing?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm doing well, thanks for asking!"
+    },
+    {
+        "role": "user",
+        "content": "Hello do you have internet access."
+    },
+    {
+        "role": "assistant",
+        "content": "I have real-time access to the internet!"
+    },
+    {
+        "role": "user",
+        "content": "Kya guys what is fun?"
+    },
+    {
+        "role": "assistant",
+        "content": "I think you're asking what's fun! Well, that's a great question! Fun can be different for everyone. Some people enjoy playing games, watching movies, or chatting with friends. What do you think is fun?"
+    },
+    {
+        "role": "user",
+        "content": "Nahin poochh rahi thi main poochh rahi thi what is guys what is?"
+    },
+    {
+        "role": "assistant",
+        "content": "I think I understand now! You were asking \"What is guys? What is?\""
+    },
+    {
+        "role": "user",
+        "content": "Hey how are you man?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm doing well, thanks for asking!"
+    },
+    {
+        "role": "user",
+        "content": "How are you feeling today?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm doing well, thanks for asking!"
+    },
+    {
+        "role": "user",
+        "content": "Hello how are you doing man?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm doing well, thanks for asking!"
+    },
+    {
+        "role": "user",
+        "content": "Agastya."
+    },
+    {
+        "role": "assistant",
+        "content": "Agastya!"
+    },
+    {
+        "role": "user",
+        "content": "August."
+    },
+    {
+        "role": "assistant",
+        "content": "August!"
+    },
+    {
+        "role": "user",
+        "content": "Tom and jerry."
+    },
+    {
+        "role": "assistant",
+        "content": "Tom and Jerry!"
+    },
+    {
+        "role": "user",
+        "content": "Agastya likes tom and jerry."
+    },
+    {
+        "role": "assistant",
+        "content": "That's cute! Agastya likes Tom and Jerry!"
+    },
+    {
+        "role": "user",
+        "content": "Hello how are you?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm doing well, thanks for asking!"
+    },
+    {
+        "role": "user",
+        "content": "Are you gay."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm an AI, I don't have personal characteristics, emotions, or sexual orientation. I exist solely to provide information and assist with tasks!"
+    },
+    {
+        "role": "user",
+        "content": "(query) yeah i want that information to check whether you are gay or not."
+    },
+    {
+        "role": "assistant",
+        "content": "I think there's been a misunderstanding! As a computer program, I don't have a sexual orientation or gender identity. I exist solely to provide information and assist with tasks, and I don't have personal characteristics or emotions."
+    },
+    {
+        "role": "user",
+        "content": "Badhiya hai thank u."
+    },
+    {
+        "role": "assistant",
+        "content": "You're welcome!"
+    },
+    {
+        "role": "user",
+        "content": "I think i don't like nivesh."
+    },
+    {
+        "role": "assistant",
+        "content": "It seems like you're expressing a personal opinion about someone named Nivesh."
+    },
+    {
+        "role": "user",
+        "content": "No i am talking about nivesh."
+    },
+    {
+        "role": "assistant",
+        "content": "I think you meant to say that you are Nivesh!"
+    },
+    {
+        "role": "user",
+        "content": "No no like leave it bro like come on let's talk about something else."
+    },
+    {
+        "role": "assistant",
+        "content": "No worries, let's move on! What would you like to talk about?"
+    },
+    {
+        "role": "user",
+        "content": "What is your name?"
+    },
+    {
+        "role": "assistant",
+        "content": "My name is Pratham!"
+    },
+    {
+        "role": "user",
+        "content": "Are i am asking you my name what is the name of your developer?"
+    },
+    {
+        "role": "assistant",
+        "content": "I think I got it wrong again! Your name is Shubh Agnihotri, and you're my developer!"
+    },
+    {
+        "role": "user",
+        "content": "Thank you for referring me."
+    },
+    {
+        "role": "assistant",
+        "content": "You're welcome! It was my pleasure to acknowledge you as my creator!"
+    },
+    {
+        "role": "user",
+        "content": "Hello how are you we haven't talked in days?"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm doing well, thanks for asking! We haven't talked in days because I'm a text-based AI, and our conversations are limited to this chat. But I'm always happy to chat with you whenever you're ready!"
+    }
+]
