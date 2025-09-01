@@ -73,7 +73,7 @@ def RealtimeSearchEngine(prompt):
     SystemChatBot.append({"role": "user", "content": GoogleSearch(prompt)})
     
     completion = client.chat.completions.create(
-        model="llama3-70b-8192",
+        model="llama-3.1-8b-instant",
         messages=SystemChatBot + [{"role": "user", "content": Information()}] + messages,
         temperature=0.7,
         max_tokens=2048,

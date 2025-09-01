@@ -5,24 +5,29 @@ import edge_tts
 import os
 from dotenv import dotenv_values
 
+# Define the base directory of the project
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Define paths to important directories
+DATA_DIR = os.path.join(BASE_DIR, 'Data')
+SPEECH_FILE_PATH = os.path.join(DATA_DIR, 'speech.mp3')
+
 env_vars = dotenv_values(".env")
 AssistantVoice=env_vars.get("AssistantVoice")
 
 async def TextToAudio(text) -> None:
-    file_path=r"Data\speech.mp3"
-    
-    if os.path.exists(file_path):
-        os.remove(file_path)
+    if os.path.exists(SPEECH_FILE_PATH):
+        os.remove(SPEECH_FILE_PATH)
 
     communicate = edge_tts.Communicate(text, AssistantVoice,pitch='+5Hz',rate='+13%')
-    await communicate.save(r'Data\speech.mp3')
+    await communicate.save(SPEECH_FILE_PATH)
     
 def TTS(Text, func=lambda r=None: True):
     while True:
         try:
             asyncio.run(TextToAudio(Text))
             pygame.mixer.init()
-            pygame.mixer.music.load(r"Data\speech.mp3")
+            pygame.mixer.music.load(SPEECH_FILE_PATH)
             pygame.mixer.music.play()
             
             while pygame.mixer.music.get_busy():

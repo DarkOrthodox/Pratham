@@ -12,6 +12,12 @@ import keyboard
 import asyncio
 import os
 
+# Define the base directory of the project
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Define paths to important directories
+DATA_DIR = os.path.join(BASE_DIR, 'Data')
+
 env_vars = dotenv_values(".env")
 GroqAPIKey = env_vars.get("GroqAPIKey")
 
@@ -33,13 +39,13 @@ professional_responses = [
 
 messages = []
 
-SystemChatBot = [{
-    "role": "system",
-    "content": f"Hello, I am {os.environ['Username']}, You're a content writer. You have to write content like letters, code, applications, essays, notes, songs, poems etc."
-}]
+SystemChatBot = [{ "role": "system", "content": f"Hello, I am {os.environ.get('Username', 'user')}, You're a content writer. You have to write content like letters, code, applications, essays, notes, songs, poems etc."}]
 
-def GoogleSearch(Topic):
-    search(Topic)
+def web_search(topic, engine="google"):
+    if engine == "google":
+        search(topic)
+    elif engine == "youtube":
+        webbrowser.open(f"https://www.youtube.com/results?search_query={topic}")
     return True
 
 def Content(Topic):
@@ -73,16 +79,11 @@ def Content(Topic):
     Topic = Topic.replace("Content ", "")
     ContentByAI = ContentWriteAO(Topic)
 
-    file_path = rf"Data\{Topic.lower().replace(' ', '')}.txt"
+    file_path = os.path.join(DATA_DIR, f"{Topic.lower().replace(' ', '')}.txt")
     with open(file_path, "w", encoding="utf-8") as file:
         file.write(ContentByAI)
 
     OpenNotepad(file_path)
-    return True
-
-def YouTubeSearch(Topic):
-    Url4Search = f"https://www.youtube.com/results?search_query={Topic}"
-    webbrowser.open(Url4Search)
     return True
 
 def PlayYoutube(query):
@@ -117,7 +118,9 @@ def OpenApp(app, sess=requests.session()):
         if html:
             links = extract_links(html)
             if links:
-                webopen(links[0])
+                print("I couldn't find the app, but here are some links that might be helpful:")
+                for link in links:
+                    print(link)
         return True
 
 def CloseApp(app):
@@ -177,10 +180,10 @@ async def TranslateAndExecute(commands: list[str]):
             fun = asyncio.to_thread(Content, command.removeprefix("content "))
             funcs.append(fun)
         elif command.startswith("google search "):
-            fun = asyncio.to_thread(GoogleSearch, command.removeprefix("google search "))
+            fun = asyncio.to_thread(web_search, command.removeprefix("google search "), engine="google")
             funcs.append(fun)
         elif command.startswith("youtube search "):
-            fun = asyncio.to_thread(YouTubeSearch, command.removeprefix("youtube search "))
+            fun = asyncio.to_thread(web_search, command.removeprefix("youtube search "), engine="youtube")
             funcs.append(fun)
         elif command.startswith("system "):
             fun = asyncio.to_thread(System, command.removeprefix("system "))

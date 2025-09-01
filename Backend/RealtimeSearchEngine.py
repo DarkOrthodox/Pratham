@@ -3,6 +3,15 @@ from groq import Groq
 from json import load,dump
 import datetime
 from dotenv import dotenv_values
+import os
+from .utils import AnswerModifier
+
+# Define the base directory of the project
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Define paths to important directories
+DATA_DIR = os.path.join(BASE_DIR, 'Data')
+CHAT_LOG_PATH = os.path.join(DATA_DIR, 'ChatLog.json')
 
 env_vars=dotenv_values(".env")
 
@@ -18,10 +27,10 @@ System = f"""Hello, I am {Username}, You are a very accurate and advanced AI cha
 
 
 try:
-    with open(r"Data\ChatLog.json","r") as f:
+    with open(CHAT_LOG_PATH,"r") as f:
         messages=load(f)
 except:
-    with open(r"Data\ChatLog.json","w") as f:
+    with open(CHAT_LOG_PATH,"w") as f:
         dump([],f)
 
 def GoogleSearch(query):
@@ -32,12 +41,6 @@ def GoogleSearch(query):
        
     Answer+="[end]"
     return Answer
-
-def AnswerModifier(Answer):
-    lines=Answer.split('\n')
-    non_empty_lines = [line for line in lines if line.strip()]
-    modified_answer='\n'.join(non_empty_lines)
-    return modified_answer
 
 SystemChatBot=[
     {"role": "system", "content": System},
@@ -66,14 +69,14 @@ def Information():
 def RealtimeSearchEngine(prompt):
     global SystemChatBot, messages
     
-    with open(r"Data\ChatLog.json","r") as f:
+    with open(CHAT_LOG_PATH,"r") as f:
         messages=load(f)
     messages.append({"role": "user", "content": f"{prompt}"})
     
     SystemChatBot.append({"role": "user", "content": GoogleSearch(prompt)})
     
     completion = client.chat.completions.create(
-        model="llama3-70b-8192",
+        model="llama-3.1-8b-instant",
         messages=SystemChatBot + [{"role": "user", "content": Information()}] + messages,
         temperature=0.7,
         max_tokens=2048,
@@ -91,7 +94,7 @@ def RealtimeSearchEngine(prompt):
     Answer=Answer.strip().replace("</s>", "")
     messages.append({"role": "assistant", "content": Answer})
         
-    with open(r"Data\ChatLog.json","w") as f:
+    with open(CHAT_LOG_PATH,"w") as f:
         dump(messages, f, indent=4)
             
     SystemChatBot.pop()

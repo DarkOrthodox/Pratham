@@ -6,12 +6,20 @@ from dotenv import get_key
 import os
 from time import sleep
 
+# Define the base directory of the project
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Define paths to important directories
+DATA_DIR = os.path.join(BASE_DIR, 'Data')
+FRONTEND_FILES_DIR = os.path.join(BASE_DIR, 'Frontend', 'Files')
+IMAGE_GENERATION_DATA_PATH = os.path.join(FRONTEND_FILES_DIR, 'ImageGeneration.data')
+
 # Constants
 API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
 headers = {"Authorization": f"Bearer {get_key('.env', 'HuggingFaceAPIKey')}"}
 
 def open_images(prompt):
-    folder_path = r"Data"
+    folder_path = DATA_DIR
     prompt_sanitized = prompt.replace(" ", "_")
 
     Files = [f"{prompt_sanitized}{i}.jpg" for i in range(1, 5)]
@@ -44,7 +52,7 @@ async def generate_images(prompt: str):
     image_bytes_list = await asyncio.gather(*tasks)
 
     for i, image_bytes in enumerate(image_bytes_list):
-        image_filename = os.path.join("Data", f"{prompt_sanitized}{i+1}.jpg")
+        image_filename = os.path.join(DATA_DIR, f"{prompt_sanitized}{i+1}.jpg")
         with open(image_filename, "wb") as f:
             f.write(image_bytes)
 
@@ -52,10 +60,9 @@ def GenerateImages(prompt: str):
     asyncio.run(generate_images(prompt))
     open_images(prompt)
 
-# Main loop
-while True:
+if __name__ == "__main__":
     try:
-        with open(r"Frontend\Files\ImageGeneration.data", "r") as f:
+        with open(IMAGE_GENERATION_DATA_PATH, "r") as f:
             Data: str = f.read()
 
         Prompt, Status = Data.strip().split(",")
@@ -64,11 +71,7 @@ while True:
             print("Generating Images...")
             GenerateImages(prompt=Prompt)
 
-            with open(r"Frontend\Files\ImageGeneration.data", "w") as f:
+            with open(IMAGE_GENERATION_DATA_PATH, "w") as f:
                 f.write("False,False")
-        else:
-            sleep(1)
-
     except Exception as e:
         print(f"Error: {e}")
-        sleep(1)

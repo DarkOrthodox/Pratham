@@ -6,6 +6,16 @@ from webdriver_manager.chrome import ChromeDriverManager
 from dotenv import dotenv_values
 import os
 import mtranslate as mt
+from .utils import QueryModifier
+
+# Define the base directory of the project
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Define paths to important directories
+DATA_DIR = os.path.join(BASE_DIR, 'Data')
+FRONTEND_FILES_DIR = os.path.join(BASE_DIR, 'Frontend', 'Files')
+VOICE_HTML_PATH = os.path.join(DATA_DIR, 'Voice.html')
+STATUS_DATA_PATH = os.path.join(FRONTEND_FILES_DIR, 'Status.data')
 
 env_vars = dotenv_values(".env") 
 InputLanguage = env_vars.get("InputLanguage")
@@ -50,11 +60,10 @@ HtmlCode = '''<!DOCTYPE html>
 
 HtmlCode = HtmlCode.replace("<<LANG>>", InputLanguage)  # ✅ Reliable replacement
 
-with open(r"Data\Voice.html", "w", encoding="utf-8") as f:
+with open(VOICE_HTML_PATH, "w", encoding="utf-8") as f:
     f.write(HtmlCode)
 
-current_dir = os.getcwd()
-Link = f"{current_dir}/Data/Voice.html"
+Link = f"file:///{VOICE_HTML_PATH}"
 
 chrome_options = Options()
 user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.142.86 Safari/537.36"
@@ -67,36 +76,16 @@ chrome_options.add_argument("--headless=new")
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
-TempDirPath = rf"{current_dir}/Frontend/Files"
-
 def SetAssistantStatus(Status):
-    with open(rf'{TempDirPath}/Status.data', "w", encoding="utf-8") as file:
+    with open(STATUS_DATA_PATH, "w", encoding="utf-8") as file:
         file.write(Status)
         
-def QueryModifier(Query):
-    new_query = Query.lower().strip()
-    query_words = new_query.split()
-    question_words = ["how", "what", "when", "where", "who", "why", "which", "whom", "whose", "can you", "what's", "where's", "who's", "how's", "why's", "when's", "which's"]
-
-    if any(word + " " in new_query for word in question_words):
-        if query_words[-1][-1] in [".", "!", "?"]:
-            new_query = new_query[:-1] + "?"
-        else:
-            new_query += "?"
-    else:
-        if query_words[-1][-1] in [".", "!", "?"]:
-            new_query += new_query[:-1] + "."
-        else:
-            new_query += "."
-            
-    return new_query
-
 def UniversalTranslator(Text):
     english_translation = mt.translate(Text, "en", "auto")
     return english_translation.capitalize()
 
 def SpeechRecognition():
-    driver.get("file:///" + Link)
+    driver.get(Link)
     driver.find_element(by=By.ID, value="start").click()
     
     while True:
